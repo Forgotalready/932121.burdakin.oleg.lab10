@@ -1,0 +1,73 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html 
+{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.curtain 
+{
+    background-image: url('./Web\ -\ Лабораторная\ работа\ №1.10/1.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.not-click
+{
+    transition: transform 0.2s;
+}
+
+.not-click:hover 
+{
+    transform: translateY(-5%);
+}
+
+.movable
+{
+    transition: transform 1s;
+    transform : translateY(-100%);
+}
+
+.no-active
+{
+    display: none;
+}
+
+.lamp
+{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.light
+{
+    position: absolute;
+    width: 400px;
+    border: 100px solid transparent;
+    border-bottom: 100px solid yellow;
+    transition: opacity 2s;
+}
+
+.light-active
+{
+    opacity: 0.5; 
+}
+
+.light-noactive
+{
+    opacity: 0;
+}
